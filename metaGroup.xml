@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+
+	<groups>
+		<define name="Meta group1">
+			<include name="Sanity" />
+			<include name="Regression" />
+
+		</define>
+		<define name="Meta group2">
+			<include name="module1" />
+
+
+			<run>
+				<include name="Meta group1" />
+			</run>
+		</define>
+	</groups>
+	<test thread-count="5" name="Meta Group Test">
+		<classes>
+
+			<class name="TestNGPackage.groupingConcept" />
+			<class name="TestNGPackage.groupingConcpt" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- DefineSuite -->
