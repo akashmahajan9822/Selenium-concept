@@ -19,18 +19,18 @@ public class ScrollingWebPAge {
 
 		// Step-3
 		// Open the url using navigate method
-		driver.navigate().to("https://vctcpune.com/selenium/practice.html#");
-
-		// Step-4
-		// scrolling webpage-we require to use javascriptexecutor
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		// scrolling down
-		js.executeScript("window.scrollBy(0,700)");
-		Thread.sleep(8000);
-
-		js.executeScript("window.scrollBy(0,-100)");
-
-		Thread.sleep(8000);
+//		driver.navigate().to("https://vctcpune.com/selenium/practice.html#");
+//
+//		// Step-4
+//		// scrolling webpage-we require to use javascriptexecutor
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		// scrolling down
+//		js.executeScript("window.scrollBy(0,700)");
+//		Thread.sleep(8000);
+//
+//		js.executeScript("window.scrollBy(0,-100)");
+//
+//		Thread.sleep(8000);
 
 		driver.get("http://omayo.blogspot.com/");
 
@@ -40,8 +40,10 @@ public class ScrollingWebPAge {
 		WebElement myButton = driver.findElement(By.id("myBtn"));
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.id("myBtn")));
+               //or
 
-		jse.executeScript("arguments[0].scrollIntoView(true);", myButton);
+	//	jse.executeScript("arguments[0].scrollIntoView(true);", myButton);
 
 		Thread.sleep(8000);
 
