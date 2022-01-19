@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGPackage.AssertionsConceptsSoft">
+      <class name="TestNGPackage.AssertionsConceptsHard">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="softAssert"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- TestNGPackage.AssertionsConceptsSoft -->
+      </class> <!-- TestNGPackage.AssertionsConceptsHard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

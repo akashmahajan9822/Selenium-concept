@@ -13,7 +13,7 @@ public class AssertionsConceptsHard {
 	   
 	  System.out.println("before asertion ");
 	  
-	  Assert.assertEquals(false, true);
+	  Assert.assertEquals(false, true, "all things are fail");
 	  
 	 
   System.out.println("after asertion ");
