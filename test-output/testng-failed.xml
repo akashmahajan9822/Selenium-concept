@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGPackage.AssertionsConceptsHard">
+      <class name="log4jConcept.login">
         <methods>
-          <include name="f"/>
+          <include name="validatTitle"/>
+          <include name="setup"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- TestNGPackage.AssertionsConceptsHard -->
+      </class> <!-- log4jConcept.login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
