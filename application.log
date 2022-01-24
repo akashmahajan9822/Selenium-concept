@@ -1,0 +1,14 @@
+2022-01-24 20:49:55,003  INFO [main] login:27 - ****************************** Starting test cases execution  *****************************************
+2022-01-24 20:49:55,008  INFO [main] login:31 - launching chrome broswer
+2022-01-24 20:50:05,024  INFO [main] login:44 - entering application URL
+2022-01-24 20:50:05,024  WARN [main] login:45 - Hey this just a warning message
+2022-01-24 20:50:05,025 FATAL [main] login:46 - hey this is just fatal error message
+2022-01-24 20:50:05,025 DEBUG [main] login:47 - this is debug message
+2022-01-24 20:50:05,070  INFO [main] login:51 - ****************************** starting test case *****************************************
+2022-01-24 20:50:05,072  INFO [main] login:52 - ****************************** freeCrmTitleTest *****************************************
+2022-01-24 20:50:05,137  INFO [main] login:54 - login page title is--->Free CRM - CRM software for customer relationship management, sales, and support.
+2022-01-24 20:50:05,165  INFO [main] login:56 - ****************************** freeCrmTitleTest closed*****************************************
+2022-01-24 20:50:05,179  INFO [main] login:61 - ****************************** freeCrmURLTest *****************************************
+2022-01-24 20:50:05,357  INFO [main] login:64 - ****************************** freeCrmURLTestclosed *****************************************
+2022-01-24 20:50:05,357  INFO [main] login:65 - ****************************** ending test case *****************************************
+2022-01-24 20:50:06,467  INFO [main] login:71 - ****************************** Browser is closed *****************************************

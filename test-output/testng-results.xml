@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-24T14:11:29 IST" name="Default suite" finished-at="2022-01-24T14:11:41 IST" duration-ms="12411">
+  <suite started-at="2022-01-24T20:49:52 IST" name="Default suite" finished-at="2022-01-24T20:50:06 IST" duration-ms="13733">
     <groups>
     </groups>
-    <test started-at="2022-01-24T14:11:29 IST" name="Default test" finished-at="2022-01-24T14:11:41 IST" duration-ms="12411">
+    <test started-at="2022-01-24T20:49:52 IST" name="Default test" finished-at="2022-01-24T20:50:06 IST" duration-ms="13733">
       <class name="log4jConcept.login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:log4jConcept.login@3f4faf53]" started-at="2022-01-24T14:11:29 IST" name="setup" finished-at="2022-01-24T14:11:40 IST" duration-ms="11516" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:log4jConcept.login@3f4faf53]" started-at="2022-01-24T20:49:52 IST" name="setup" finished-at="2022-01-24T20:50:05 IST" duration-ms="12252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validatTitle()[pri:0, instance:log4jConcept.login@3f4faf53]" started-at="2022-01-24T14:11:40 IST" name="validatTitle" finished-at="2022-01-24T14:11:40 IST" duration-ms="101" status="PASS">
+        <test-method signature="validatTitle()[pri:0, instance:log4jConcept.login@3f4faf53]" started-at="2022-01-24T20:50:05 IST" name="validatTitle" finished-at="2022-01-24T20:50:05 IST" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatTitle -->
-        <test-method signature="validatURL()[pri:0, instance:log4jConcept.login@3f4faf53]" started-at="2022-01-24T14:11:40 IST" name="validatURL" finished-at="2022-01-24T14:11:41 IST" duration-ms="17" status="PASS">
+        <test-method signature="validatURL()[pri:0, instance:log4jConcept.login@3f4faf53]" started-at="2022-01-24T20:50:05 IST" name="validatURL" finished-at="2022-01-24T20:50:05 IST" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatURL -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:log4jConcept.login@3f4faf53]" started-at="2022-01-24T14:11:41 IST" name="teardown" finished-at="2022-01-24T14:11:41 IST" duration-ms="702" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:log4jConcept.login@3f4faf53]" started-at="2022-01-24T20:50:05 IST" name="teardown" finished-at="2022-01-24T20:50:06 IST" duration-ms="1107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
