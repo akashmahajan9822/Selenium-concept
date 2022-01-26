@@ -24,8 +24,10 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import log4jConceptAndExtentReports.GenerateReportONTEST;
 
-public class ExtentTestNGIReporterListener implements IReporter {
+
+public class ExtentTestNGIReporterListener extends GenerateReportONTEST implements IReporter {
     
     private static final String OUTPUT_FOLDER = "test-output/ExtendReport/";
     private static final String FILE_NAME = "extendReport.html";

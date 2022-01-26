@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="log4jConceptAndExtentReports.TestClass">
+      <class name="log4jConceptAndExtentReports.GenerateReportONTEST">
         <methods>
-          <include name="logoutAccount"/>
-          <include name="launchBrowser"/>
-          <include name="verifyorder"/>
-          <include name="closedBrowser"/>
-          <include name="verifydashboard"/>
+          <include name="testcase1"/>
+          <include name="MonitorResult"/>
+          <include name="startReport"/>
+          <include name="end"/>
+          <include name="testcase4"/>
         </methods>
-      </class> <!-- log4jConceptAndExtentReports.TestClass -->
+      </class> <!-- log4jConceptAndExtentReports.GenerateReportONTEST -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

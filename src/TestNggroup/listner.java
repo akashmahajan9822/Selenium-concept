@@ -15,7 +15,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-@Listeners(TestNggroup.TestNgListenerMethods.class)
+@Listeners(TestNggroup.TestNgListenerMethods.class)// i used listner at class level we can also used at suit level
 public class listner {
 	 SoftAssert sa;
 	@BeforeTest
