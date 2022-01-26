@@ -96,5 +96,21 @@
 	<classpathentry kind="lib" path="C:/Selenium jar/sikuli/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Selenium jar/sikuli/xml-apis-1.3.04.jar"/>
 	<classpathentry kind="lib" path="C:/Selenium jar/log4j/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar" sourcepath="C:/Users/Admin/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.aventstack"/>
+			<attribute name="maven.artifactId" value="extentreports"/>
+			<attribute name="maven.version" value="3.1.5"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Selenium jar/extent report/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium jar/extent report/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium jar/extent report/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium jar/extent report/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium jar/extent report/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium jar/extent report/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium jar/extent report/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

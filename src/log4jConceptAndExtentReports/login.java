@@ -1,4 +1,4 @@
-package log4jConcept;
+package log4jConceptAndExtentReports;
 
 import java.util.concurrent.TimeUnit;
 
