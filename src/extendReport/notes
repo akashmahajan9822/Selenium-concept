@@ -1,0 +1,105 @@
+  Starting Custom Reporters=      extent.startReporter(ReporterType);
+  ------------------------------------------------------------------------------------------------
+  Writing to Report=            extent.flush();
+ ------------------------------------------------------------------------------------------------ 
+  Appending to an Existing Report == To append to a report you had previously created, simply mark replaceExisting = false and new tests will be appended to the same report.
+        ExtentReports extent = new ExtentReports(file-path, false);
+  ------------------------------------------------------------------------------------
+  Starting and Ending Tests==
+  
+Tto start tests, a new instance of ExtentTest must be created. To end, simply call endTest(testInstance).
+
+
+// new instance
+EextentReports extent = new ExtentReports(file-path, replaceExisting);
+
+// starting test
+EextentTest test = extent.startTest("Test Name", "Sample description");
+
+// step log
+test.log(LogStatus.PASS, "Step details");
+
+// ending test
+eextent.endTest(test);
+
+// writing everything to document
+eextent.flush();
+
+------------------------------------------------------------------------------------------------
+
+Creating Step Logs
+
+There are 2 ways logs can be created: one that creates 3 columns and other that creates 4.
+ Always use only 1 type of log for the test otherwise the table will become malformed.
+ 
+ // creates 3 columns in table: TimeStamp, Status, Details
+log(LogStatus, details);
+log(LogStatus logStatus, Throwable t);
+
+// creates 4 columns in table: TimeStamp, Status, StepName, Details
+log(LogStatus, stepName, details);
+log(LogStatus logStatus, String stepName, Throwable t);
+
+------------------------------------------------------------------------------------------------
+Getting Current RunStatus of Test   === LogStatus status = test.getRunStatus();
+------------------------------------------------------------------------------------------------
+Assign Test Categories  ===    test.assignCategory("Regression");
+                                test.assignCategory("Regression", "ExtentAPI");
+                            test.assignCategory("Regression", "ExtentAPI", "category-3", "cagegory-4", ..);
+                            
+------------------------------------------------------------------------------------------------                            
+                            
+   Assign Test Author(s)
+ Assign the author of the test (similar to assignCategory above):
+
+test.assignAuthor("Anshoo");
+test.assignAuthor("Anshoo", "Viren");
+------------------------------------------------------------------------------------------------
+
+Adding Child Tests
+To add a test node as a child of another test, use the appendChild method.
+
+
+ExtentTest parent = extent.startTest("Parent");
+
+ExtentTest child1 = extent.startTest("Child 1");
+child1.log(LogStatus.INFO, "Info");
+
+ExtentTest child2 = extent.startTest("Child 2");
+child2.log(LogStatus.PASS, "Pass");
+
+parent
+    .appendChild(child1)
+    .appendChild(child2);
+    
+extent.endTest(parent);
+
+------------------------------------------------------------------------------------------------
+
+Insert Snapshots
+To add a screen-shot, simply call addScreenCapture. This method returns the HTML with  tag which can be used anywhere in the log details.
+
+
+test.log(LogStatus.INFO, "Snapshot below: " + test.addScreenCapture("screenshot-path"));
+
+------------------------------------------------------------------------------------------------
+
+
+Adding System Info
+It is possible to add system or environment info for your using using the addSystemInfo method. It is an overloaded method that allows you to add via a Map or string pairs.
+
+By default, the OS, User Name, Java Version and Host Name will be available. You do not have to add these 4 items manually.
+
+
+extent.addSystemInfo("Selenium Version", "2.46");
+extent.addSystemInfo("Environment", "Prod");
+
+Map sysInfo = new HashMap();
+sysInfo.put("Selenium Version", "2.46");
+sysInfo.put("Environment", "Prod");
+
+
+------------------------------------------------------------------------------------------------
+
+
+extent.addSystemInfo(sysInfo);

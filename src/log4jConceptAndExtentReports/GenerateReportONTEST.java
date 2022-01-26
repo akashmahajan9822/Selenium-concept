@@ -30,7 +30,9 @@ public class GenerateReportONTEST {
 		reporter = new ExtentHtmlReporter("test-output"+File.separator+"ExtendReport"+File.separator+"extendReport.html");
 			extent=new ExtentReports();
 		extent.attachReporter(reporter);
-		
+		extent.setSystemInfo("Host Name", "Akash ");
+		extent.setSystemInfo("User Name", "Akash Mahajan");
+		extent.setSystemInfo("Environment", "QA");
 	}
 	
 	@Test
@@ -63,12 +65,13 @@ public void testcase5() {
 	public void MonitorResult(ITestResult result) {
 		System.out.println(result.getStatus());
 		
-		if(result.getStatus()==ITestResult.FAILURE){
-			
-		//	test.log(  null, "Test Failed"+result.getName());
+		if(result.getStatus()==ITestResult.FAILURE){  
+			//test.log(LogStatus.FAIL, "Test Case SKIPPED IS " + result.getName());
+		
+		
 			
 		}
-		//else {test.log(  null, "Test pass"+result.getName());}
+		//else {test.log(LogStatus.PASS, "Test Case SKIPPED IS " + result.getName());}
 		
 	
 	}
