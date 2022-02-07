@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="log4jConceptAndExtentReports.GenerateReportONTEST">
+      <class name="TestNggroup.screenshotbylistner">
         <methods>
-          <include name="testcase1"/>
-          <include name="MonitorResult"/>
-          <include name="startReport"/>
-          <include name="end"/>
-          <include name="testcase4"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- log4jConceptAndExtentReports.GenerateReportONTEST -->
+      </class> <!-- TestNggroup.screenshotbylistner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

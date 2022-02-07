@@ -15,7 +15,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
-@Listeners(TestNggroup.TestNgListenersClass.class)
+@Listeners(TestNggroup.TestNgListenersClass.class) 
 public class screenshotbylistner {
 	
 	// create global object so we can used object in all methods.
