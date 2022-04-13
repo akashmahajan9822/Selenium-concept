@@ -24,6 +24,7 @@ public class Test1 {
   }
 
 }
+
 Then you will define the testng.xml:
 
 <suite>
@@ -38,3 +39,4 @@ Then you will define the testng.xml:
     </classes>
   </test> 
 </suite>
+In most cases you define, which classes to include for the run, not to exclude, so just include the classes you want to run.
